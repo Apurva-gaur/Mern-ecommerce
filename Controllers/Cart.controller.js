@@ -39,7 +39,7 @@ export const userCart=async (req,res)=>{
   {
      return res.json({message:"cart does not find"})
   }
-  res.json({message:"cart find sucu",cart})
+  res.json({message:"cart find successfully",cart})
 }
 // remove product from cart
 export const removeProductFromCart = async (req, res) => {  
