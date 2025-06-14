@@ -9,7 +9,7 @@ const router=express.Router();
 router.post("/add",Authenticated ,addToCart)
 
 // get User Cart
-router.get("/user", userCart);
+router.get("/user",Authenticated , userCart);
 
 // // remove product from cart
 router.delete("/remove/:productId",Authenticated ,  removeProductFromCart);
